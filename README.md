@@ -1,5 +1,5 @@
-# Public
-Primary Public Facing Repository
+# WebApplication
+Primary public facing repository
 
 Install
 =====
@@ -34,7 +34,6 @@ Pipeline / TODO
 ======
  - Bash profiles
  - API connection and testing
- - Update.sh
 
  Troubleshooting
  =====
