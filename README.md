@@ -35,8 +35,7 @@ Pipeline / TODO
  - Bash profiles
  - API connection and testing
  - Update.sh
- - Deploy.sh
- 
+
  Troubleshooting
  =====
   - `vagrant destroy` 
