@@ -1,32 +1,50 @@
 # Public
 Primary Public Facing Repository
 
-Vagrant Install
+Install
 =====
 
  - Install the latest version of vagrant http://www.vagrantup.com/downloads
- - In your home folder create a directory called `~vm-share` 
- - This will automatically be synced to `/workspace` on the host
+ - Install VirtualBox https://www.virtualbox.org/wiki/Downloads
+ - Update your vagrant repos `vagrant box update`
+ - You might have to log out and log back in
+ - On the CLIENT create a directory called `~/vm-share` 
+ - This will automatically be synced to `/workspace` on the HOST
  - `vagrant up` to build the development environment
- - Select and interface with internet access
+ - Select an interface with internet access (Probably 1)
+ - Grab a cup of coffee - this takes a while
  - `vagrant ssh` to access the server
-
-Provisioning Steps
-=====
-
- - Go into the repository directory on the host `cd /workspace/WebApplication` 
- - `ls` make sure everything looks okay
- - `cd Install` Go into the Install directory
- - `sudo sh Install.sh` to Provision the environment [ROOT WARNING]
  
 Test out the server
 =====
+ - Read the vagrant output to find your IP address (At the very end)
+ - Hit that IP in a browser
+ - Take a gander at `~/vm-share/WebApplication/Public/index.php` on your CLIENT machine
+ - Buy Kris brunch
 
- - `ifconfig | grep inet` on the host to get your local ip address on your home network
- - `inet 10.1.1.X  netmask 255.255.255.0  broadcast 10.1.1.255` Should look like this
- - In any browser on your home network go to `10.1.1.X`
- - Change a file in `~/vm-share/WebApplication`
- 
-Win
+Release Notes
 ======
- - Call Kris and tell her how easy that was
+ - CentOS 7.1
+ - PHP 5.6
+ - Apache 2.4
+ - Node 0.10
+ - Composer HEAD
+ 
+Pipeline / TODO
+======
+ - Bash profiles
+ - API connection and testing
+ - Update.sh
+ - Deploy.sh
+ 
+ Troubleshooting
+ =====
+  - `vagrant destroy` 
+  	- Totally okay to run 
+  	- Will essentially <nuke> the VM
+  - `vagrant version`
+  	- This install needs 1.7+ to run
+  - `vagrant up`
+  	- This will spin up the VM and run Install.sh
+  - `vagrant halt`
+  	- Be patient! This will shut the server down

@@ -2,7 +2,7 @@
 
 ###############################################################################
 #
-# Web Applicaton [WebApplication] Provision Shell Script
+# Web Applicaton [WebApplication.git] Provision Shell Script
 #
 #				..Kris
 ###
@@ -20,7 +20,22 @@ echo '...done'
 # It is critical that we also add it here
 #
 echo '--- Installing dependencies ---'
-yum install -y gcc screen vim nano unzip curl wget man git strace emacs
+yum install -y gcc gcc-c++ screen vim nano unzip curl wget man git strace emacs
+echo '...done'
+
+##
+# Install Node.js
+# Basically download the tarball and compile this crap for Hernerh
+#
+#
+echo '--- Installing Node.js ---'
+cd ~
+wget http://nodejs.org/dist/v0.10.30/node-v0.10.30.tar.gz #Node version hard coded here :(
+tar xzvf node-v* && cd node-v*
+./configure
+make
+sudo make install
+node --version
 echo '...done'
 
 ##
@@ -43,14 +58,14 @@ EOF
 	echo "${XDEBUGCONF}" > /etc/php.d/xdebug.ini
 fi
 yum install -y php56w php56w-cli php56w-devel php56w-opcache php56w-pdo php56w-mysql php56w-xml php56w-soap php56w-mcrypt php56w-pecl-apcu php56w-pecl-xdebug php56w-posix
+yum install -y mod_php #Needed for Apache
 echo '...done'
 
 
 ##
-# Install PHP Pear and discover PHPUnit
+# Install PHP Pear 
 #
 echo '--- Configuring php-pear ---'
-pear channel-discover pear.phpunit.de
 pear channel-discover pear.symfony-project.com
 echo '...done'
 
@@ -63,11 +78,15 @@ echo '...done'
 #echo '...done'
 
 ##
-# Install PHPUnit so Hannah has no excuses
+# Install PHPUnit
 # Rule number 76
 #
 echo '--- Installing PHPUnit ---'
-pear install -a phpunit/PHPUnit
+cd ~
+wget https://phar.phpunit.de/phpunit.phar
+chmod +x phpunit.phar
+sudo mv phpunit.phar /usr/local/bin/phpunit
+phpunit --version
 echo '...done'
 
 ##
@@ -102,16 +121,15 @@ echo '...done'
 # Install default vHost config
 #
 echo '--- Creating vHost ---'
-cp -vp ./httpd/vhost.conf /etc/httpd/conf.d/vhost.conf
+cp -vp /workspace/WebApplication/Install/httpd/vhost.conf /etc/httpd/conf.d/vhost.conf
 echo '...done'
 
 ##
 # Install default HTTPd.conf
 #
 echo '--- Replacing Apache Config ---'
-cp -vp ./httpd/httpd.conf /etc/httpd/conf/httpd.conf
+cp -vp /workspace/WebApplication/Install/httpd/httpd.conf /etc/httpd/conf/httpd.conf
 echo '...done'
-
 
 ##
 # Restart Apache!
@@ -120,8 +138,29 @@ echo '--- Restarting Services ---'
 service httpd restart
 echo '...done'
 
+##
+# Lets figure out how you can access this thing
+# Spit out some IP addresses to try
+#
+echo '********************************************************************************'
+echo '********************************************************************************'
+echo '*'
+echo '* You should now be able to find the VM IP address in here :' 
+echo '*'
+echo '*'
+ifconfig | grep "inet"
+echo '*'
+echo '*'
+echo '* Go ahead and hit that IP in your browser..'
+echo '*'
+echo '* 		..Yes I am serious'
+echo '*'
+echo '*								 ..Kris'
+echo '********************************************************************************'
+echo '********************************************************************************'
+
 
 ##
-# Fin!!
 #
-echo 'Fin'
+# We should now have an updated and awesome dev server!
+#

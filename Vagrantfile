@@ -16,7 +16,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.synced_folder "~/vm-share", "/workspace"
 
   config.vm.provider "virtualbox" do |vb|
-    vb.name = "Public"
+    vb.name = "WebApplication"
   #   vb.gui = true
     vb.customize ["modifyvm", :id, "--memory", "512"]
   end
