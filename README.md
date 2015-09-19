@@ -34,15 +34,17 @@ Pipeline / TODO
 ======
  - Bash profiles
  - API connection and testing
+ - Update.sh
+ - Deploy.sh
 
- Troubleshooting
- =====
-  - `vagrant destroy` 
-  	- Totally okay to run 
-  	- Will essentially <nuke> the VM
-  - `vagrant version`
-  	- This install needs 1.7+ to run
-  - `vagrant up`
-  	- This will spin up the VM and run Install.sh
-  - `vagrant halt`
+Troubleshooting
+=====
+ - `vagrant destroy` 
+  - Totally okay to run 
+  - Will essentially <nuke> the VM
+ - `vagrant version`
+  - This install needs 1.7+ to run
+ - `vagrant up`
+  - This will spin up the VM and run Install.sh
+ - `vagrant halt`
   	- Be patient! This will shut the server down
