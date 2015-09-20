@@ -44,7 +44,7 @@ Troubleshooting
 =====
  - `vagrant destroy` 
   - Totally okay to run 
-  - Will essentially <nuke> the VM
+  - Will essentially nuke the VM
  - `vagrant version`
   - This install needs 1.7+ to run
  - `vagrant up`
