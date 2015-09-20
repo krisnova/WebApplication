@@ -19,7 +19,7 @@ Install
  
 Test out the server
 =====
- - Read the vagrant output to find your IP address (At the very end)
+ - Read the vagrant output to find the WebApplication VM's IP address (At the very end)
  - Hit that IP in a browser
  - Take a gander at `~/vm-share/WebApplication/Public/index.php` on your CLIENT machine
  - Make a quick change..
