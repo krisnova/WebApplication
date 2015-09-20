@@ -10,6 +10,8 @@ Install
  - You might have to log out and log back in
  - On the CLIENT create a directory called `~/vm-share` 
  - This will automatically be synced to `/workspace` on the HOST
+ - `cd ~/vm-share && git clone https://github.com/kris-nova/WebApplication.git`
+ - `cd ~/vm-share/WebApplication`
  - `vagrant up` to build the development environment
  - Select an interface with internet access (Probably 1)
  - Grab a cup of coffee - this takes a while
