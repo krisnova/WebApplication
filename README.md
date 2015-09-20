@@ -20,7 +20,8 @@ Test out the server
  - Read the vagrant output to find your IP address (At the very end)
  - Hit that IP in a browser
  - Take a gander at `~/vm-share/WebApplication/Public/index.php` on your CLIENT machine
- - Buy Kris brunch
+ - Make a quick change..
+ - ..Buy Kris brunch
 
 Release Notes
 ======
