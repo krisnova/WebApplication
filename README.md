@@ -32,6 +32,7 @@ Release Notes
  - Apache 2.4
  - Node 0.10
  - Composer HEAD
+ - Laravel 5 (MVC)
  
 Pipeline / TODO
 ======
