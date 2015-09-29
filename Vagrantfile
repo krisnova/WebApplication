@@ -13,7 +13,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   # config.ssh.forward_agent = true
 
-  config.vm.synced_folder "~/vm-share", "/workspace"
+  config.vm.synced_folder "~/vm-share/WebApplication", "/workspace/WebApplication"
 
   config.vm.provider "virtualbox" do |vb|
     vb.name = "WebApplication"
