@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
-
 ###############################################################################
 #
-# Web Applicaton [WebApplication.git] Provision Shell Script
+# API [API.git] Provision Shell Script
 #
 #				..Kris
 ###
@@ -15,12 +14,11 @@ yum -y update
 echo '...done'
 
 ##
-# Define front end dependencies here
-# If we are missing a package on the server and it needs to be installed
-# It is critical that we also add it here
+# Define dependencies here
 #
 echo '--- Installing dependencies ---'
-yum install -y gcc gcc-c++ screen vim nano unzip curl wget man git strace emacs
+yum install -y gcc gcc-c++ screen vim nano unzip curl wget man git strace emacs kernel-devel-$(uname -r) kernel-headers-$(uname -r)
+/etc/init.d/vboxadd setup
 echo '...done'
 
 ##
