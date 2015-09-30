@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
+hostname WebApplication
 ###############################################################################
 #
-# API [API.git] Provision Shell Script
+# WebApplication [WepApplication.git] Provision Shell Script
 #
 #				..Kris
 ###
