@@ -56,7 +56,7 @@ EOF
 )
 	echo "${XDEBUGCONF}" > /etc/php.d/xdebug.ini
 fi
-yum install -y php56w php56w-cli php56w-devel php56w-opcache php56w-pdo php56w-mysql php56w-xml php56w-soap php56w-mcrypt php56w-pecl-apcu php56w-pecl-xdebug php56w-posix
+yum install -y php56w php56w-cli php56w-devel php56w-mbstring php56w-opcache php56w-pdo php56w-mysql php56w-xml php56w-soap php56w-mcrypt php56w-pecl-apcu php56w-pecl-xdebug php56w-posix
 yum install -y mod_php #Needed for Apache
 echo '...done'
 
