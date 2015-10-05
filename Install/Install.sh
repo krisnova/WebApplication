@@ -18,7 +18,7 @@ echo '...done'
 # Define dependencies here
 #
 echo '--- Installing dependencies ---'
-yum install -y gcc gcc-c++ screen vim nano unzip curl wget man git strace emacs kernel-devel-$(uname -r) kernel-headers-$(uname -r)
+yum install -y gcc gcc-c++ screen vim nano unzip curl wget man git strace emacs kernel-devel kernel-headers
 /etc/init.d/vboxadd setup
 echo '...done'
 
