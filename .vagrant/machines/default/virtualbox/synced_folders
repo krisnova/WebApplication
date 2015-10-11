@@ -1,0 +1,1 @@
+{"virtualbox":{"/workspace":{"guestpath":"/workspace","hostpath":"/Users/hannahnewsome/Dev/vm-share","disabled":false},"/vagrant":{"guestpath":"/vagrant","hostpath":"/Users/hannahnewsome/vm-share/WebApplication","disabled":false},"/workspace/WebApplication":{"guestpath":"/workspace/WebApplication","hostpath":"/Users/hannahnewsome/vm-share/WebApplication","disabled":false}}}

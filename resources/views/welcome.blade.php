@@ -38,8 +38,8 @@
     <body>
         <div class="container">
             <div class="content">
-                <div class="title">Laravel 5</div>
-                hello ;)
+                <div class="title">Soundeavor</div>
+                coming soon
             </div>
         </div>
     </body>
