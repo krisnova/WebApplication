@@ -4,23 +4,35 @@
         <div class="trendingProjects section">
                 <div class="titleHeader">Trending Projects</div>
                 <div class="trendingContent">
-                        <div class="trendingItem">
-                                This is a trending project!
+                        <div class="trendingItem"><div class="icon"></div>
+                                <div class="info">This is a trending project!
+                                        Do some stuff with your friends to probably win something.
+                                        Maybe just pride.  <a href="">Look, here is a link.</a></div>
                         </div>
-                        <div class="trendingItem">
-                                This is a trending project!
+                        <div class="trendingItem"><div class="icon"></div>
+                                <div class="info">This is a trending project!
+                                        Do some stuff with your friends to probably win something.
+                                        Maybe just pride.  <a href="">Look, here is a link.</a></div>
                         </div>
-                        <div class="trendingItem">
-                                This is a trending project!
+                        <div class="trendingItem"><div class="icon"></div>
+                                <div class="info">This is a trending project!
+                                        Do some stuff with your friends to probably win something.
+                                        Maybe just pride.  <a href="">Look, here is a link.</a></div>
                         </div>
-                        <div class="trendingItem">
-                                This is a trending project!
+                        <div class="trendingItem"><div class="icon"></div>
+                                <div class="info">This is a trending project!
+                                        Do some stuff with your friends to probably win something.
+                                        Maybe just pride.  <a href="">Look, here is a link.</a></div>
                         </div>
-                        <div class="trendingItem">
-                                This is a trending project!
+                        <div class="trendingItem"><div class="icon"></div>
+                                <div class="info">This is a trending project!
+                                        Do some stuff with your friends to probably win something.
+                                        Maybe just pride.  <a href="">Look, here is a link.</a></div>
                         </div>
-                        <div class="trendingItem">
-                                This is a trending project!
+                        <div class="trendingItem"><div class="icon"></div>
+                                <div class="info">This is a trending project!
+                                        Do some stuff with your friends to probably win something.
+                                        Maybe just pride.  <a href="">Look, here is a link.</a></div>
                         </div>
                 </div>
         </div>
@@ -36,23 +48,38 @@
         <div class="trendingChallenges section">
                 <div class="titleHeader">Trending Challenges</div>
                 <div class="trendingContent">
-                        <div class="trendingItem">
-                                This is a trending challenge!
+                        <div class="trendingItem"><div class="icon"></div>
+                                <div class="info">This is a trending challenge!
+                                Do some stuff with your friends to probably win something.
+                                Maybe just pride.  <a href="">Look, here is a link.</a></div>
                         </div>
-                        <div class="trendingItem">
-                                This is a trending challenge!
+                        <div class="trendingItem"><div class="icon"></div>
+                                <div class="info">This is a trending challenge!
+                                        Do some stuff with your friends to probably win something.
+                                        Maybe just pride.  <a href="">Look, here is a link.</a></div>
+
                         </div>
-                        <div class="trendingItem">
-                                This is a trending challenge!
+                        <div class="trendingItem"><div class="icon"></div>
+                                <div class="info">This is a trending challenge!
+                                        Do some stuff with your friends to probably win something.
+                                        Maybe just pride.  <a href="">Look, here is a link.</a></div>
+
                         </div>
-                        <div class="trendingItem">
-                                This is a trending challenge!
+                        <div class="trendingItem"><div class="icon"></div>
+                                <div class="info">This is a trending challenge!
+                                        Do some stuff with your friends to probably win something.
+                                        Maybe just pride.  <a href="">Look, here is a link.</a></div>
+
                         </div>
-                        <div class="trendingItem">
-                                This is a trending challenge!
+                        <div class="trendingItem"><div class="icon"></div>
+                                <div class="info">This is a trending challenge!
+                                        Do some stuff with your friends to probably win something.
+                                        Maybe just pride.  <a href="">Look, here is a link.</a></div>
                         </div>
-                        <div class="trendingItem">
-                                This is a trending challenge!
+                        <div class="trendingItem"><div class="icon"></div>
+                                <div class="info">This is a trending challenge!
+                                        Do some stuff with your friends to probably win something.
+                                        Maybe just pride.  <a href="">Look, here is a link.</a></div>
                         </div>
                 </div>
         </div>
