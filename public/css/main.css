@@ -17,11 +17,26 @@ body {
     vertical-align: middle;
 }
 
-.content {
-    text-align: center;
-    display: inline-block;
-}
-
 .title {
     font-size: 96px;
+}
+
+.login .logo {
+    background-image: url("/images/logo.png");
+    background-position: -42px center;
+    height: 245px;
+    text-indent: -9999px;
+    width: 434px;
+}
+.section {
+    display: inline-block;
+    width: 33%;
+}
+
+.loginOptions div img {
+    width: 250px;
+}
+
+.loginOptions div.loginFacebook img {
+    width: 260px;
 }
