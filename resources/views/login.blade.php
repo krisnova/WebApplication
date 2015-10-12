@@ -34,6 +34,7 @@
                                         Do some stuff with your friends to probably win something.
                                         Maybe just pride.  <a href="">Look, here is a link.</a></div>
                         </div>
+                        <div class="fadeout"></div>
                 </div>
         </div>
         <div class="login section">
@@ -81,6 +82,7 @@
                                         Do some stuff with your friends to probably win something.
                                         Maybe just pride.  <a href="">Look, here is a link.</a></div>
                         </div>
+                        <div class="fadeout"></div>
                 </div>
         </div>
 
