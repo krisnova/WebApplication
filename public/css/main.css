@@ -1,6 +1,11 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto+Slab:700);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+/* background grey: #4D4D4D
+* what i listen to: #6CC8AF
+* guitar: #D40000
+* drums:#F78B1C
 
+*/
 html, body {
     height: 100%;
 }
@@ -12,8 +17,9 @@ body {
     display: table;
     font-weight: 400;
     font-family: 'Open Sans', sans-serif;
-    color: #666666;
+    color: #ffffff;
     font-size:14px;
+    background-color: #4d4d4d;
 }
 
 /* basic page setup */
@@ -39,6 +45,7 @@ body {
     height: 245px;
     text-indent: -9999px;
     width: 434px;
+    margin:0 auto;
 }
 
 .section .titleHeader {
@@ -116,7 +123,7 @@ body {
     );
 }
 .navItem {
-    color: #666;
+    color: #ffffff;
     display: inline-block;
     font-family: "Roboto Slab",serif;
     font-size: 30px;
@@ -130,7 +137,6 @@ body {
 }
 
 .nav {
-    border-bottom: 2px solid #f5f5f5;
     height: 100px;
     margin-bottom: 10px;
     position: relative;
@@ -150,6 +156,7 @@ body {
 .profilePicture img {
     border: 2px solid #f5f5f5;
     width: 225px;
+    border-radius: 50%;
 }
 .profilePicture img:hover {
     opacity: .8;
@@ -159,18 +166,10 @@ body {
     font-family: "Open Sans", sans-serif;
     font-size:12px;
 }
-.profileContent .section.studio {
-    display: inline-block;
-    width: 25%;
-    margin-left: 30px;
-}
-.profileContent .section.studio .titleHeader{
-    margin-bottom: 10px;
-}
+
 .profileContent .section.profile {
     display: inline-block;
-    width: 50%;
-    border-right: 2px solid #f5f5f5;
+    width: 90%;
 }
 .profileContent .section .titleHeader {
     font-size: 18px;
@@ -178,11 +177,13 @@ body {
     text-transform: uppercase;
     display: block;
     color:#FF5A00;
-    text-align: center;
+}
+.profileContent .subSection .profileSkills div {
+    display: block;
+    width: 100%;
 }
 .profileContent .subSection div {
     display: inline-block;
-    width: 48%;
     vertical-align: middle;
     text-align: left;
 }
@@ -197,6 +198,7 @@ body {
 }
 .claimsToFame {
     text-align: left;
+    margin-left: 35px;
 }
 .profilePicture {
     margin-right: 10px;
@@ -204,9 +206,7 @@ body {
 .profileSkills img {
     height: 30px;
 }
-.profileSkills span {
-    display: block;
-}
+
 .stars {
     background-image: url("/images/rating-stars.jpg");
     background-repeat: no-repeat;
@@ -242,21 +242,18 @@ body {
 .profileContent .subSection .profileInteract div {
     width:auto;
 }
-.profileContent .subSection .profileSkills {
-    width: 33%;
-}
+
 .profileContent .subSection .profileInteract div {
-    background-color: #f5f5f5;
-    border: 1px solid teal;
+    background-color: #6CC8AF;
+    border: 1px solid #6CC8AF;
     border-radius: 5px;
-    color: teal;
+    color: #ffffff;
     font-weight: bold;
     padding: 10px;
     text-transform: uppercase;
     width: auto;
-}
-.profileContent .subSection .profileInteract {
-    width: 54%;
+    display: block;
+    margin: 2px 0;
 }
 .profileContent .subSection .profileObjectives {
     vertical-align: top;
@@ -269,7 +266,7 @@ body {
     height: 178px;
     margin: 0;
     padding: 0;
-    width: 178px;
+    width: 49%;
     position:relative;
 }
 .studioBlock.odd {
@@ -298,4 +295,56 @@ body {
     position: absolute;
     font-size: 18px;
     font-weight: bold;
+}
+.profileSkills {
+    margin-right: 35px;
+}
+.profileInteract {
+    margin: 0 35px;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+
+.dot {
+    stroke: #000;
+}
+
+.tooltip {
+    height: 28px;
+    left: 15%;
+    pointer-events: none;
+    position: absolute;
+    top: 10%;
+    width: 200px;
+}
+.profileObjectives #map {
+    border: 10px solid #fff;
+    position: relative;
+}
+video#bgvid {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url(polina.jpg) no-repeat;
+    background-size: cover;
+}
+.login.section {
+    background-color: #4d4d4d;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.9;
+    vertical-align: top;
+    width: 50%;
 }

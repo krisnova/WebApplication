@@ -22,5 +22,9 @@ Route::get('login', function(){
 Route::get('profile', function(){
     return view('profile');
 });
-
-Route::get('dashboard', "PagesController@dashboard");
+Route::get('matchmap', function(){
+    return view('matchmap');
+});
+Route::get('explore', function(){
+    return view('explore');
+});

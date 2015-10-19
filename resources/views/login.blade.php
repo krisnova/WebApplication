@@ -1,7 +1,7 @@
 @extends('app')
 
 @section('content')
-        <div class="trendingProjects section">
+       <!-- <div class="trendingProjects section">
                 <div class="titleHeader">Trending Projects</div>
                 <div class="trendingContent">
                         <div class="trendingItem"><div class="icon"></div>
@@ -36,7 +36,11 @@
                         </div>
                         <div class="fadeout"></div>
                 </div>
-        </div>
+        </div>-->
+<video autoplay loop poster="polina.jpg" id="bgvid">
+        <source src="polina.webm" type="video/webm">
+        <source src="images/polina.mp4" type="video/mp4">
+</video>
         <div class="login section">
                 <div class="logo">Soundeavor</div>
                 <div class="loginOptions">
@@ -46,7 +50,7 @@
                         <div class="loginSpotify"><img src="/images/sign-in-button-spotify.png"/></div>
                 </div>
         </div>
-        <div class="trendingChallenges section">
+        <!-- <div class="trendingChallenges section">
                 <div class="titleHeader">Trending Challenges</div>
                 <div class="trendingContent">
                         <div class="trendingItem"><div class="icon"></div>
@@ -84,6 +88,6 @@
                         </div>
                         <div class="fadeout"></div>
                 </div>
-        </div>
+        </div> -->
 
 @stop
