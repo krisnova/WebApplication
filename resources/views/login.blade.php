@@ -39,15 +39,14 @@
         </div>-->
 <video autoplay loop poster="polina.jpg" id="bgvid">
         <source src="polina.webm" type="video/webm">
-        <source src="images/polina.mp4" type="video/mp4">
+        <source src="images/crowd.mp4" type="video/mp4">
 </video>
         <div class="login section">
                 <div class="logo">Soundeavor</div>
                 <div class="loginOptions">
                         <div class="loginGoogle"><img src="/images/sign-in-button-google.png"/></div>
-                        <div class="loginFacebook"><img src="/images/sign-in-button-facebook.png"/></div>
+                        <div class="loginFacebook"><a href="/profile"><img src="/images/sign-in-button-facebook.png"/></a></div>
                         <div class="loginSoundcloud"><img src="/images/sign-in-button-soundcloud.png"/></div>
-                        <div class="loginSpotify"><img src="/images/sign-in-button-spotify.png"/></div>
                 </div>
         </div>
         <!-- <div class="trendingChallenges section">
@@ -89,5 +88,10 @@
                         <div class="fadeout"></div>
                 </div>
         </div> -->
+<div class="bottomContainer">
+        <div class="infoSection">5534 Artists</div>
+        <div class="infoSection">20345 Songs</div>
+        <div class="infoSection">800 Contests</div>
+</div>
 
 @stop

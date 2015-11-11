@@ -15,29 +15,31 @@
                 <img src="{{ URL::asset('/images/zelda-belda.jpg') }}" />
             </div>
             <div class="profileSkills">
-                <span class="titleHeader name">Zelda B. Derg</span>
+                <span class="titleHeader name"><span class="emphasis">Zelda</span> B. Derg</span>
                 <span class="location">San Francisco, CA</span>
                 <div class=""> <svg height="30" width="30">
-                        <circle cx="15" cy="15" r="15" fill="#F78B1C" />
+                        <circle class="dot" cx="15" cy="15" r="15" fill="#F78B1C"/>
                     </svg> <span class="skill1">Drums (18 years)</span></div>
                 <div class="">
-                    <svg height="30" width="30">
-                        <circle cx="15" cy="15" r="15" fill="#D40000" />
+                     <svg height="30" width="30">
+                        <circle class="dot" cx="15" cy="15" r="15" fill="#D40000" />
                     </svg>
                     <span class="skill2">Guitar (13 years)</span>
                 </div>
-                <div class=""><svg height="30" width="30">
-                        <circle cx="15" cy="15" r="15" fill="#6CC8AF" />
-                    </svg> <span class="skill3">What I Listen to</span></div>
+                <div class="">
+                    <svg height="30" width="30">
+                        <circle class="dot" cx="15" cy="15" r="15" fill="#6CC8AF" />
+                    </svg>
+                    <span class="skill3">What I Listen To</span></div>
             </div>
             <div class="profileInteract">
-                <span class="titleHeader">Link Points</span>
+                <span class="titleHeader"><span class="emphasis">Link</span> Points</span>
                 <div class="challenge">Challenge</div>
                 <div class="collaborate">Collaborate</div>
                 <div class="liveLink">Live Link</div>
             </div>
             <div class="claimsToFame">
-                <span class="titleHeader">Vital Stats</span>
+                <span class="titleHeader"><span class="emphasis">Vital</span> Stats</span>
                 <ul>
                     <li class="claims contests"><span class="sdAccent">795</span> Contests Won</li>
                     <li class="claims projects"><span class="sdAccent">33</span> Projects</li>
@@ -48,14 +50,11 @@
         </div>
         <div class="subSection">
             <div class="profileInfluences">
-                <span class="titleHeader">Musical Identity</span>
-                <ul>
-                    <li class="influence">Influence 1</li>
-                    <li class="influence">Influence 2</li>
-                </ul>
+                <span class="titleHeader"><span class="emphasis">Musical</span> Identity</span>
+                <img src="{{ URL::asset('/images/musical_identity.png') }}" />
             </div>
             <div class="profileObjectives">
-                <span class="titleHeader">Contest Action</span>
+                <span class="titleHeader"><span class="emphasis">Contest</span> Action</span>
                 <div id="map"></div>
             </div>
         </div>
@@ -107,7 +106,7 @@
     .style("opacity", 0);
 
     // load data
-    d3.csv("/js/cereal.csv", function(error, data) {
+    d3.csv("/data/cereal.csv", function(error, data) {
 
     // change string (from CSV) into number format
     data.forEach(function(d) {
@@ -158,12 +157,12 @@
     tooltip.transition()
     .duration(200)
     .style("opacity", .9);
-    tooltip.html(d["Cereal Name"] + "<br/> (" + xValue(d)
-    + ", " + yValue(d) + ")")
+    tooltip.html(d["Cereal Name"] + "<br/>" + xValue(d)
+    + " Contestants<br/> " + yValue(d) + " Hours <br/> <a href='/contest'>Compete</a>")
     .style("left", (d3.event.pageX + 5) + "px")
     .style("top", (d3.event.pageY - 28) + "px");
     })
-    .on("mouseout", function(d) {
+    .on("click", function(d) {
     tooltip.transition()
     .duration(500)
     .style("opacity", 0);

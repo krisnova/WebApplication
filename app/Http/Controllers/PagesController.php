@@ -20,7 +20,10 @@ class PagesController extends Controller
 
     public function login()
     {
-        return view('login');
+        $uri = "http://10.0.0.86/User/Auth/Login/Facebook/";
+        $response = \Httpful\Request::get($uri)->send();
+
+        echo $response;
     }
 
     public function dashboard()
