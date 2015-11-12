@@ -12,11 +12,18 @@
 */
 
 Route::get('/', function(){
-    return view('welcome');
+    return view('index');
 });
 
 Route::get('login', function(){
     return view('login');
+});
+
+Route::get('login/user', function(){
+    $uri = "http://10.0.0.86/User/Auth/Login/Facebook/";
+    $response = \Httpful\Request::get($uri)->send();
+
+    echo $response;
 });
 
 Route::get('profile', function(){

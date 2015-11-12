@@ -12,13 +12,13 @@
     <title>Soundeavor - Coming Soon</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ URL::asset('splash/css/bootstrap.min.css') }}" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="css/grayscale.css" rel="stylesheet">
+    <link href="{{ URL::asset('splash/css/splash-main.css') }}" rel="stylesheet">
 
-    <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- Fonts -->
+    <link href="{{ URL::asset('splash/font-awesome/css/font-awesome.min.css') }}" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
 
@@ -41,7 +41,7 @@
                     <i class="fa fa-bars"></i>
                 </button>
                 <a class="navbar-brand page-scroll" href="#page-top">
-                    <i class="fa fa-play-circle"></i>  <span class="light">Start</span> Soundeavor
+                    <!--<i class="fa fa-play-circle"></i> -->  <img src="{{ URL::asset('splash/img/soundeavor.png') }}" width="50" />
                 </a>
             </div>
 
@@ -55,9 +55,9 @@
                     <li>
                         <a class="page-scroll" href="#about">About</a>
                     </li>
-                    <li>
+                    <!--<li>
                         <a class="page-scroll" href="#wait">Wait List</a>
-                    </li>
+                    </li>-->
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>
                     </li>
@@ -75,7 +75,7 @@
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
                         <h1 class="brand-heading">Soundeavor</h1>
-                        <p class="intro-text">By analyzing your playing style, listening preferences, and objectives we present you with highly tailored opportunities to work with other people.</p>
+                        <p class="intro-text">Unlocking musical potential through analytics, collaboration and competition.</p>
                         <a href="#about" class="btn btn-circle page-scroll">
                             <i class="fa fa-angle-double-down animated"></i>
                         </a>
@@ -89,16 +89,16 @@
     <section id="about" class="container content-section text-center">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
-                <img src="img/logomark-10.png" width="300" /><br />
-                <h2>About Soundeavor</h2>
-                <p>We’re building a set of online technologies that will fundamentally change the way people come together to create music. </p>
-                <p>By analyzing your playing style, listening preferences, and objectives we present you with highly tailored opportunities to work with other people. Be it collaborative - “help me with this song” - or be it competitive - “$500 to the best jingle about the Dallas Cowboys” - above all we give people a dynamic space to interact and advance their musical creativity. </p>
-                <p>We're in the early stages of building, so check back soon for more detailed information!</p>
+                <img src="{{ URL::asset('splash/img/soundeavor-logo-white.png') }}" /><br />
+                <!-- <h2>About Soundeavor</h2> -->
+                <p>Our technologies will fundamentally alter the way people come together to create music.</p>
+                <p>We deconstruct musicians' playing styles and map their sound to an ecosystem of contests and projects that demand their unique talent. There is an ear for every sound, and our platform will supply the technological bridges for fulfilling that truth. </p>
+                <p>Our invitation-only service will launch in December 2015.</p>
             </div>
         </div>
     </section>
 
-    <!-- Wait List Section -->
+    <!-- Wait List Section
     <section id="wait" class="content-section text-center">
         <div class="wait-section">
             <div class="container">
@@ -117,18 +117,19 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>Contact The Soundeavor Team</h2>
-                <p>Feel free to email us for more information about the Soundeavor project, or to just say hello!</p>
-                <p><a href="mailto:feedback@startbootstrap.com">info@soundeavor.com</a>
-                </p>
+                <p>Interested in getting involved? We would love to hear from you. Please use the links below to email the Soundeavor teammate closest to you.</p>
                 <ul class="list-inline banner-social-buttons">
                     <li>
-                        <a href="https://twitter.com/Soundeavor" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+                        <a href="mailto:sanfrancisco@soundeavor.com" class="btn btn-default btn-lg"> <span class="network-name">San Francisco</span></a>
                     </li>
                     <li>
-                        <a href="https://github.com/soundeavor" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                        <a href="mailto:denver@soundeavor.com" class="btn btn-default btn-lg"> <span class="network-name">Denver</span></a>
                     </li>
                     <li>
-                        <a href="https://plus.google.com/+Soundeavor/posts" class="btn btn-default btn-lg"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
+                        <a href="mailto:delta@soundeavor.com" class="btn btn-default btn-lg"> <span class="network-name">Mississippi Delta</span></a>
+                    </li>
+                    <li>
+                        <a href="mailto:baltimore@soundeavor.com" class="btn btn-default btn-lg"> <span class="network-name">Baltimore</span></a>
                     </li>
                 </ul>
             </div>
@@ -136,7 +137,7 @@
     </section>
 
     <!-- Map Section -->
-    <div id="map"></div>
+    <div id="map"><img src="{{ URL::asset('splash/img/soundeavor_map.png') }}" /></div>
 
     <!-- Footer -->
     <footer>
@@ -146,19 +147,18 @@
     </footer>
 
     <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+    <script src="{{ URL::asset('splash/js/jquery.js') }}"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="{{ URL::asset('splash/js/bootstrap.min.js') }}"></script>
 
     <!-- Plugin JavaScript -->
-    <script src="js/jquery.easing.min.js"></script>
+    <script src="{{ URL::asset('splash/js/jquery.easing.min.js') }}"></script>
 
-    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+    <!--<script src="https://maps.googleapis.com/maps/api/js"></script>-->
 
     <!-- Custom Theme JavaScript -->
-    <script src="js/grayscale.js"></script>
+    <script src="{{ URL::asset('splash/js/grayscale.js') }}"></script>
 
 </body>
 
