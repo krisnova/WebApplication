@@ -93,7 +93,7 @@
                 <!-- <h2>About Soundeavor</h2> -->
                 <p>Our technologies will fundamentally alter the way people come together to create music.</p>
                 <p>We deconstruct musicians' playing styles and map their sound to an ecosystem of contests and projects that demand their unique talent. There is an ear for every sound, and our platform will supply the technological bridges for fulfilling that truth. </p>
-                <p>Our invitation-only service will launch in December 2015.</p>
+                <p>Our invitation-only service will launch in early 2016.</p>
             </div>
         </div>
     </section>
