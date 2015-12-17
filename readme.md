@@ -1,27 +1,54 @@
-## Laravel PHP Framework
+# WebApplication
+Primary public facing repository
 
-[![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
-[![Total Downloads](https://poser.pugx.org/laravel/framework/d/total.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/framework/v/unstable.svg)](https://packagist.org/packages/laravel/framework)
-[![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
+Install
+=====
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, queueing, and caching.
+ - Install the latest version of vagrant http://www.vagrantup.com/downloads
+ - Install VirtualBox https://www.virtualbox.org/wiki/Downloads
+ - Update your vagrant repos `vagrant box update`
+ - You might have to log out and log back in
+ - On the CLIENT create a directory called `~/vm-share` 
+ - This will automatically be synced to `/workspace` on the HOST
+ - `cd ~/vm-share && git clone https://github.com/kris-nova/WebApplication.git`
+ - `cd ~/vm-share/WebApplication`
+ - `vagrant up` to build the development environment
+ - Select an interface with internet access (Probably 1)
+ - Grab a cup of coffee - this takes a while
+ - `vagrant ssh` to access the server
+ 
+Test out the server
+=====
+ - Read the vagrant output to find the WebApplication VM's IP address (At the very end)
+ - Hit that IP in a browser
+ - Take a gander at `~/vm-share/WebApplication/Public/index.php` on your CLIENT machine
+ - Make a quick change..
+ - ..Buy Kris brunch
 
-Laravel is accessible, yet powerful, providing powerful tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
+Release Notes
+======
+ - CentOS 7.1
+ - PHP 5.6
+ - Apache 2.4
+ - Node 0.10
+ - Composer HEAD
+ - Laravel 5 (MVC)
+ 
+Pipeline / TODO
+======
+ - Bash profiles
+ - API connection and testing
+ - Update.sh
+ - Deploy.sh
 
-## Official Documentation
-
-Documentation for the framework can be found on the [Laravel website](http://laravel.com/docs).
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
-
-### License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+Troubleshooting
+=====
+ - `vagrant destroy` 
+  - Totally okay to run 
+  - Will essentially nuke the VM
+ - `vagrant version`
+  - This install needs 1.7+ to run
+ - `vagrant up`
+  - This will spin up the VM and run Install.sh
+ - `vagrant halt`
+  	- Be patient! This will shut the server down
