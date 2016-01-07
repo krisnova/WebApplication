@@ -34,6 +34,15 @@ class AuthController extends Controller
     }
 
     /**
+     *customizing the redirect paths for success and failure
+    **/
+
+    /*  success*/
+    protected $redirectPath = '/dashboard';
+    /* failure */
+    protected $loginPath = '/login';
+
+    /**
      * Get a validator for an incoming registration request.
      *
      * @param  array  $data
@@ -54,6 +63,8 @@ class AuthController extends Controller
      * @param  array  $data
      * @return User
      */
+
+     /** Will need to talk to KRIS about how this integrates with the API **/
     protected function create(array $data)
     {
         return User::create([

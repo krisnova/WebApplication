@@ -47,10 +47,15 @@
                         <div class="loginGoogle"><img src="/images/sign-in-button-google.png"/></div>
                         <div class="loginFacebook"><a href="/profile"><img src="/images/sign-in-button-facebook.png"/></a></div>
                         <div class="loginSoundcloud"><img src="/images/sign-in-button-soundcloud.png"/></div>
-                        <!-- resources/views/auth/login.blade.php -->
+                        <!-- resources/views/auth/register.blade.php -->
 
-                        <form method="POST" action="/auth/login">
+                        <form method="POST" action="/auth/register">
                             {!! csrf_field() !!}
+
+                            <div>
+                                Name
+                                <input type="text" name="name" value="{{ old('name') }}">
+                            </div>
 
                             <div>
                                 Email
@@ -59,15 +64,16 @@
 
                             <div>
                                 Password
-                                <input type="password" name="password" id="password">
+                                <input type="password" name="password">
                             </div>
 
                             <div>
-                                <input type="checkbox" name="remember"> Remember Me
+                                Confirm Password
+                                <input type="password" name="password_confirmation">
                             </div>
 
                             <div>
-                                <button type="submit">Login</button>
+                                <button type="submit">Register</button>
                             </div>
                         </form>
                 </div>
