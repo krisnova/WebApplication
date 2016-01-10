@@ -40,7 +40,7 @@ p {
 @media(min-width:768px) {
     p {
         margin: 0 0 35px;
-        font-size: 20px;
+        font-size: 25px; /*used to be 20px*/
         line-height: 1.6;
     }
 }
@@ -84,6 +84,13 @@ a:focus {
     display: block;
     margin: 0 auto;
 }
+/*adjusting the color of the about section to provide variety*/
+section#about {
+    background-color: #fff;
+    color: #636363;
+    width: 100%;
+}
+
 #about img {
     width: 75%;
 }
@@ -139,6 +146,18 @@ a:focus {
     color: #fff;
 }
 
+@media (min-width: 1200px) {
+  /*overriding bootstraps column size to account for wider paragraphs*/
+  .col-lg-offset-2 {
+  margin-left: 0.666667%;
+  }
+  .col-lg-8 {
+    width: 96.666667%;
+  }
+
+}
+
+
 @media(min-width:768px) {
     .navbar-custom {
         padding: 20px 0;
@@ -164,7 +183,7 @@ a:focus {
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background: url(../img/intro-bg.jpg) no-repeat center center scroll;
+    background: url(../img/intro-bg-edited.jpg) no-repeat center center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -187,6 +206,13 @@ a:focus {
     font-size: 20px;
 }
 
+@media(max-width:768px) {
+  .intro .intro-body {
+      background: rgba(0, 0, 0, .1);
+      display: table-cell;
+      vertical-align: middle;
+  }
+}
 @media(min-width:768px) {
     .intro {
         height: 100%;
@@ -245,7 +271,7 @@ input.btn.btn-default.btn-lg {
     -moz-animation-timing-function: linear;
 }
 
-@-webkit-keyframes pulse {    
+@-webkit-keyframes pulse {
     0% {
         -webkit-transform: scale(1);
         transform: scale(1);
@@ -262,7 +288,7 @@ input.btn.btn-default.btn-lg {
     }
 }
 
-@-moz-keyframes pulse {    
+@-moz-keyframes pulse {
     0% {
         -moz-transform: scale(1);
         transform: scale(1);
