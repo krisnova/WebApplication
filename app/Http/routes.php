@@ -38,11 +38,9 @@ Route::get('profile', [
     'uses' => 'ProfileController@show'
 ]);
 
-/*
-Route::get('profile', function(){
-    return view('profile');
-});
-*/
+Route::get('upload', 'UploadController@index');
+Route::post('upload/add', 'UploadController@uploadFiles');
+
 Route::get('matchmap', function(){
     return view('matchmap');
 });
