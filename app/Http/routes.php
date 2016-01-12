@@ -41,6 +41,10 @@ Route::get('profile', [
 Route::get('upload', 'UploadController@index');
 Route::post('upload/add', 'UploadController@uploadFiles');
 
+Route::get('testing-site', function(){
+    return view('testing-site');
+});
+
 Route::get('matchmap', function(){
     return view('matchmap');
 });
