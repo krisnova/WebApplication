@@ -6,9 +6,9 @@
      @endif
      <hr />
 
-    <form action="add" method="post" enctype="multipart/form-data">
-        <input type="hidden" name="_token" value="{{ csrf_token() }}">
-        <input type="file" name="file">
-        <input type="submit">
-    </form>
+     <form action="add" class="dropzone">
+   <div class="fallback">
+     <input name="file" type="file" multiple />
+   </div>
+ 		</form>
 @endsection
