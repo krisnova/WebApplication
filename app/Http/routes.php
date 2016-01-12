@@ -57,6 +57,6 @@ Route::get('explore', function(){
 Route::resource('fileupload', 'FileController');
 
 Route::get('upload', function() {
-  return View::make('pages.upload');
+  return View::make('upload');
 });
 Route::post('apply/upload', 'ApplyController@upload');
