@@ -7,41 +7,22 @@
 
 		<!-- Google web fonts -->
 		<link href="http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700" rel='stylesheet' />
-
+		<!-- DropZone JS inclusion -->
+		<script src="{{ URL::asset('testing-site/js/dropzone.js') }}"></script>
 		<!-- The main CSS file -->
-		<link href="{{ URL::asset('testing-site/assets/css/style.css') }}" rel="stylesheet" />
+		<link href="{{ URL::asset('testing-site/css/dropzone.css') }}" rel="stylesheet" />
 	</head>
 
 	<body>
 
-		<form id="upload" method="post" action="{{ URL::asset('testing-site/upload.php')}}" enctype="multipart/form-data">
-			<div id="drop">
-				Drop Here
-
-				<a>Browse</a>
-				<input type="file" name="upl" multiple />
-			</div>
-
-			<ul>
-				<!-- The file uploads will be shown here -->
-			</ul>
-
+		<form action="/file-upload" class="dropzone">
+  <div class="fallback">
+    <input name="file" type="file" multiple />
+  </div>
 		</form>
 
 		<footer>
         </footer>
-
-		<!-- JavaScript Includes -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-		<script src="{{ URL::asset('testing-site/assets/js/jquery.knob.js') }}"></script>
-
-		<!-- jQuery File Upload Dependencies -->
-		<script src="{{ URL::asset('testing-site/assets/js/jquery.ui.widget.js') }}"></script>
-		<script src="{{ URL::asset('testing-site/assets/js/jquery.iframe-transport.js') }}"></script>
-		<script src="{{ URL::asset('testing-site/assets/js/jquery.fileupload.js') }}"></script>
-
-		<!-- Our main JS file -->
-		<script src="{{ URL::asset('testing-site/assets/js/script.js') }}"></script>
 
 	</body>
 </html>

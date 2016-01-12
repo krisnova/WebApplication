@@ -41,16 +41,15 @@ Route::get('profile', [
 Route::get('upload', 'UploadController@index');
 Route::post('upload/add', 'UploadController@uploadFiles');
 
-<<<<<<< HEAD
 Route::get('testing', function(){
     return view('testing');
 });
 
-=======
->>>>>>> parent of c512053... Adding in the Testing/Upload Area
 Route::get('matchmap', function(){
     return view('matchmap');
 });
 Route::get('explore', function(){
     return view('explore');
 });
+
+Route::resource('fileupload', 'FileController');
