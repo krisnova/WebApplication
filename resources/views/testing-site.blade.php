@@ -14,7 +14,7 @@
 
 	<body>
 
-		<form id="upload" method="post" action="upload.php" enctype="multipart/form-data">
+		<form id="upload" method="post" action="{{ URL::asset('testing-site/upload.php')}}" enctype="multipart/form-data">
 			<div id="drop">
 				Drop Here
 
