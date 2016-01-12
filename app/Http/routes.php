@@ -38,7 +38,7 @@ Route::get('profile', [
     'uses' => 'ProfileController@show'
 ]);
 
-Route::get('upload', 'UploadController@index');
+Route::get('upload2', 'UploadController@index');
 Route::post('upload/add', 'UploadController@uploadFiles');
 
 Route::get('testing', function(){
@@ -55,3 +55,8 @@ Route::get('explore', function(){
 });
 
 Route::resource('fileupload', 'FileController');
+
+Route::get('upload', function() {
+  return View::make('pages.upload');
+});
+Route::post('apply/upload', 'ApplyController@upload');
