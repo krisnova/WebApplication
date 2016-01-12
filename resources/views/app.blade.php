@@ -6,6 +6,10 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="{{ URL::asset('/css/main.css') }}">
 
+    <script src="{{ URL::asset('testing-site/js/dropzone.js') }}"></script>
+		<!-- The main CSS file -->
+		<link href="{{ URL::asset('testing-site/css/dropzone.css') }}" rel="stylesheet" />
+
 </head>
 <body>
 <div class="container">
