@@ -14,7 +14,8 @@
         "phpunit/phpunit": "~4.0",
         "phpspec/phpspec": "~2.1",
         "guzzlehttp/guzzle": "~6.0",
-	"nategood/httpful": "*"
+	    "nategood/httpful": "*",
+        "laravelcollective/html": "5.1.*"
     },
     "autoload": {
         "classmap": [
