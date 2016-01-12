@@ -45,6 +45,8 @@ Route::get('testing', function(){
     return view('testing');
 });
 
+Route::post('testing/file-upload', 'TestingUploadController');
+
 Route::get('matchmap', function(){
     return view('matchmap');
 });
