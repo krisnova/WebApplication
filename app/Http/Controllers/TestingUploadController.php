@@ -1,4 +1,5 @@
 <?php
+class FileController extends BaseController {
 $file = Input::file('file');
 $destinationPath = 'uploads';
 // If the uploads fail due to file system, you can try doing public_path().'/uploads'
@@ -11,5 +12,6 @@ if( $upload_success ) {
    return Response::json('success', 200);
 } else {
    return Response::json('error', 400);
+}
 }
 ?>
