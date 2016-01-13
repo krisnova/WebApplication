@@ -33,7 +33,7 @@
         <meta name="theme-color" content="#ffffff">
         
         <!--mailchimp signup styles-->
-        <link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
+       <!-- <link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">-->
 								<style type="text/css">
 									#mc_embed_signup{background:rgba(255, 0, 0, 0.0);; clear:left; font:14px Helvetica,Arial,sans-serif; }
 									/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
@@ -54,10 +54,10 @@
 									<a href="#menu" class="menuToggle"><span>Menu</span></a>
 									<div id="menu">
 										<ul>
-											<li><a href="#banner">Home</a></li>
-											<li><a href="#one">The Science</a></li>
-											<li><a href="#two">Why?</a></li>
-											<li><a href="#cta">Get Involved</a></li>
+											<li><a class="scrolly" href="#banner">Home</a></li>
+											<li><a class="scrolly" href="#one">The Science</a></li>
+											<li><a class="scrolly" href="#two">Why?</a></li>
+											<li><a class="scrolly" href="#cta">Get Involved</a></li>
 											<li><a href="#">Register</a></li>
 											<li><a href="#">Log In</a></li>
 										</ul>
