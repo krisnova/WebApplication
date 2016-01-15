@@ -60,3 +60,7 @@ Route::get('upload', function() {
   return View::make('upload');
 });
 Route::post('apply/upload', 'ApplyController@upload');
+
+Route::get('info', function(){
+    return view('info');
+});

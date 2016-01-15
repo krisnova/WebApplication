@@ -58,8 +58,8 @@
 											<li><a class="scrolly" href="#one">The Science</a></li>
 											<li><a class="scrolly" href="#two">Why?</a></li>
 											<li><a class="scrolly" href="#cta">Get Involved</a></li>
-											<li><a href="#">Register</a></li>
-											<li><a href="#">Log In</a></li>
+											<li><a>Register</a></li>
+											<li><a>Log In</a></li>
 										</ul>
 									</div>
 								</li>
@@ -75,7 +75,7 @@
 							<p>Unlocking musical potential <br />through analytics, collaboration and competition.
 							</p>
 							<ul class="actions">
-								<li><a href="#one" class="button special">What's This Wizardry?</a></li>
+								<li><a href="#one" class="button scrolly special">What's This Wizardry?</a></li>
 							</ul>
 						</div>
 						<a href="#one" class="more scrolly">Learn More</a>
@@ -309,8 +309,9 @@
 							</header>
 							<ul class="actions vertical">
 								<!--<li><i class="fa fa-codiepie fa-spin"></i></li>-->
-								<li><a href="#" class="button fit special">Activate</a></li>
-								<li><a href="#" class="button fit">Learn More</a></li>
+								<!--<li><a href="#" class="button fit special">Activate</a></li>
+								<li><a href="#" class="button fit">Learn More</a></li>-->
+                                <img src="{{ URL::asset('sabiosplash/images/soundeavor-logo-S.png') }}" />
 							</ul>
 						</div>
 					</section>

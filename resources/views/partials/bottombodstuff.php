@@ -1,0 +1,1 @@
+<script src="{{ URL::asset('testing/assets/js/notie.js') }}"></script>
